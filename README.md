@@ -10,8 +10,11 @@ A map in this sense may not or may not resemble a typical spatially defined map.
 # Interview/Survey:
 
 What is your favourite time in a year (spring, summer, fall, winter) for fishing?
+
 How do you personally predict weather or do you believe in weather prognostics?
+
 How much does moon phases influence the catch?
+
 How much has the arbitrage convention changed your relationship with fishermen in the bordering countries or how much did it change your work?
 
 Miro Board link: https://miro.com/welcomeonboard/2hTiBnesmYv9uztv9xHqisEoixam3zb9216Q8NwCiZZTv5ejT4zT2EEqYYFcQUUH
