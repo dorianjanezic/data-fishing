@@ -1,6 +1,5 @@
 # Data Fishing
 
-# The Project
 
 The project looks to create subjective or cultural “mappings” of the Slovenian and/or United Arab Emirates coasts and their respective port cities of Koper and Abu Dhabi. These mappings would place focus on the lives and experiences of the people who are a part of fishing industries and communities.
 
@@ -8,7 +7,7 @@ A map in this sense may not or may not resemble a typical spatially defined map.
 
 (Unquantifiable data could be fishermen’s superstitions and their own “gut” feeling of the weather and when it is a good time to fish, which time of the year brings them a better catch)
 
-Interview/Survey:
+# Interview/Survey:
 
 What is your favourite time in a year (spring, summer, fall, winter) for fishing?
 How do you personally predict weather or do you believe in weather prognostics?
@@ -17,7 +16,7 @@ How much has the arbitrage convention changed your relationship with fishermen i
 
 Miro Board link: https://miro.com/welcomeonboard/2hTiBnesmYv9uztv9xHqisEoixam3zb9216Q8NwCiZZTv5ejT4zT2EEqYYFcQUUH
 
-The Data
+# The Data
 
 The data would ideally come from four primary sources, listed in order of expected importance. 
 A series of surveys or ethnographic interviews with fishermen or fish mongers. To gain perspective about time cultures, social norms, and historic overview.
@@ -39,11 +38,11 @@ Global Fishing Watch: https://globalfishingwatch.org/
 
 
 
-Reasoning
+# Reasoning
 
 Despite their historical importance and cosmopolitan cultures, coastal cities and communities are usually defined by their relation to the nearest primary political hub or capital city. Additionally, modern data collection is most commonly done from a strictly scientific and global perspective that for consumer, logistical, and technical reasons frequently leaves out coastal and oceanic regions and peoples. This creates a flattened perspective of the people and practices which interact and intersect with our oceans and risks ignoring or erasing traditional or common wisdom about our environment, economies, and societies.
 
-The Ethical
+# The Ethical
 
 Technical data could be considered sensitive such as locations of “good fishing spots” ; these locations could be trade secrets or provide identifying personnel or vessel information to otherwise anonymous markets. Black box technical data is extractive.
 
