@@ -1,6 +1,6 @@
 # Data Fishing
 
-The Project
+# The Project
 
 The project looks to create subjective or cultural “mappings” of the Slovenian and/or United Arab Emirates coasts and their respective port cities of Koper and Abu Dhabi. These mappings would place focus on the lives and experiences of the people who are a part of fishing industries and communities.
 
