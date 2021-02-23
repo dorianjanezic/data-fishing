@@ -36,9 +36,7 @@ https://www.marinetraffic.com/en/ais/home/centerx:19.7/centery:43.0/zoom:8
 
 Global Fishing Watch: https://globalfishingwatch.org/
 
-
-
-
+https://www.obala.com/
 
 
 # Reasoning
