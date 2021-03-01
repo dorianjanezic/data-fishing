@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marine landings in SLO</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+    
+    <style type="text/css">
+
+    body {
+      margin: 50px;
+    }
+
+			div.bar {
+				display: inline-block;
+				width: 50px;
+				height: 75px;	/* Gets overriden by D3-assigned height below */
+				margin-right: 2px;
+				background-color: royalblue;
+                align-items: center;
+                text-align: center;
+			}
+
+            #dateOfEntry {
+                text-align: center;
+            }
+
+            #Kilograms {
+                text-align: center;
+            }
+
+            #Employment {
+                text-align: center;
+            }
+
+		</style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //adapted from Scott Murray's tutorial: https://alignedleft.com/tutorials/d3/drawing-divs
+      
+      //establish arrays for each of the categories I want to map data to
+      var year = [];
+      var kg = [];
+      var years = [];
+      var employment = [];
+     
+       
+  
+        //load the data and assign values to my arrays
+        d3.json("year_kg.json").then(function(data) {
+          var entries = data.data;
+          for (var i = 0; i < entries.length; i++) {
+            year.push(entries[i].year);
+            kg.push(entries[i].kg);
+            years.push(entries[i].year.length)
+            employment.push(entries[i].employment);
+          }
+   
+
+          // run the function to draw the circles after the data has been loaded
+          console.log(year);
+          drawBars();
+        });
+  
+        //drawing the bars
+        function drawBars() {
+          d3.select("body").selectAll("div")
+                    .data(kg) //pinning the "catch" array as the dataset
+                    .enter()
+                    .append("div") //adding a new div for each year element
+                    .attr("class", "bar") //appending the "bar" class to the new divs
+                    .style("height", function(d) {
+                        var barHeight = d / 10000;
+                        return barHeight + "px";
+                    }) //adjusting the style so the height reflects the number
+            .on("click", function(a, d) {
+              var kgIndex = kg.indexOf(d);
+              var employmentIndex = kg.indexOf(d);
+              document.getElementById("Kilograms").innerHTML = kg[kgIndex]+ " Kilograms of Marine landings";
+              document.getElementById("Employment").innerHTML = employment[employmentIndex];
+            })
+            .on("mouseover", function(a, d){
+              var yearIndex = kg.indexOf(d);
+              document.getElementById("dateOfEntry").innerHTML = year[yearIndex];
+            });
+        };
+
+
+  
+      </script>
+      <p id="dateOfEntry">Hover over each bar to display the year</p>
+      <p id="Kilograms">Click on each bar to display the total landings in kilograms.</p>
+      <p id="Employment">Click on each bar to display the total number of people employed</p>
+      <br>
+    </body>
+  </html>
