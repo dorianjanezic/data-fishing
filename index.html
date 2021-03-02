@@ -2,13 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Marine landings in SLO</title>
+    <title>Local Data</title>
     <script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     
     <style type="text/css">
 
     body {
       margin: 50px;
+      background-image: url("IMG_9367.jpg");
+    }
+
+    a:hover {
+      background-color: salmon;
     }
 
 			div.bar {
@@ -16,21 +23,38 @@
 				width: 50px;
 				height: 75px;	/* Gets overriden by D3-assigned height below */
 				margin-right: 2px;
-				background-color: royalblue;
-                align-items: center;
-                text-align: center;
+				background-color: rgb(88, 105, 170);
+        align-items: center;
+        text-align: center;
+        
 			}
 
+      div.bar:hover {
+        background-color: rgb(33, 51, 121);
+        outline: 3px, black;
+      }
+
+      
+      
             #dateOfEntry {
                 text-align: center;
+                font-family: 'Roboto Slab', serif;
+                font-size: larger;
+                color: rgb(88, 105, 170);
             }
 
             #Kilograms {
                 text-align: center;
+                font-family: 'Roboto Slab', serif;
+                font-size: larger;
+                color: rgb(88, 105, 170);
             }
 
             #Employment {
                 text-align: center;
+                font-family: 'Roboto Slab', serif;
+                font-size: larger;
+                color: rgb(88, 105, 170);
             }
 
 		</style>
@@ -79,19 +103,18 @@
               var employmentIndex = kg.indexOf(d);
               document.getElementById("Kilograms").innerHTML = kg[kgIndex]+ " Kilograms of Marine landings";
               document.getElementById("Employment").innerHTML = employment[employmentIndex];
+              var barcharts = document.getElementsByClassName("bar");             
             })
             .on("mouseover", function(a, d){
               var yearIndex = kg.indexOf(d);
               document.getElementById("dateOfEntry").innerHTML = year[yearIndex];
             });
         };
-
-
   
       </script>
-      <p id="dateOfEntry">Hover over each bar to display the year</p>
-      <p id="Kilograms">Click on each bar to display the total landings in kilograms.</p>
-      <p id="Employment">Click on each bar to display the total number of people employed</p>
+      <p id="dateOfEntry">hover over each bar to display the year</p>
+      <p id="Kilograms">click on each bar to display the total landings in kilograms</p>
+      <p id="Employment">click on each bar to display the total number of people employed</p>
       <br>
     </body>
   </html>
